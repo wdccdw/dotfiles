@@ -1,0 +1,18 @@
+[user]
+	name = David Conner
+	email = wdc+github@doginspace.com
+[github]
+	user = wdccdw
+	token = abbd8d68416c6015c99a4f93a4a5d760
+[color]
+	sh = auto
+[core]
+	excludesfile = /Users/wdc/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
