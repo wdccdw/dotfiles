@@ -5,7 +5,7 @@ fi
 
 alias ando="ssh dconner@issara.pair.com"
 alias rasp16="ssh -i ~/.ssh/id_raspberry pi@192.168.200.116"
-
+alias did="vim +'normal Go' +'r!date' ~/did.txt"
 
 export PATH=/usr/local/bin:$PATH
 export GOPATH=$HOME/go;
