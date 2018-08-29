@@ -19,7 +19,7 @@ alias ladyslipper="sftp laufuc1@lizard.dreamhost.com"
 
 export PATH=/usr/local/bin:$PATH
 export GOPATH=$HOME/go;
-export PATH="$GOPATH/bin:$PATH:";
+export PATH="$GOPATH/bin:$PATH";
 export PATH="$PATH:/usr/local/opt/go/libexec/bin";
 
 export PATH=/usr/local/anaconda3/bin:"$PATH"
