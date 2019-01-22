@@ -1,0 +1,20 @@
+# Always extract audio
+--extract-audio
+
+# use AAC
+--audio-format mp3
+
+# Keep generated
+-k
+
+# always save to toimport
+-o ~/Desktop/toimport/%(title)s.%(ext)s
+
+# keep track of downloads
+--download-archive ~/.youtube-dl.archive
+
+# ignore errors
+--ignore-errors
+
+
+
