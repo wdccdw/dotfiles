@@ -1,4 +1,5 @@
 #!/bin/sh
 
-stow bash
-stow git
+stow -t ~ bash
+stow -t ~ git
+stow -t ~/.ssh ssh
