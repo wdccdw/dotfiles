@@ -58,6 +58,28 @@ if [ -r ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
+# this starts an agent if it isn't running
+
+# adapted from https://stackoverflow.com/a/48509425
+# Ensure agent is running
+ssh-add -l &>/dev/null
+if [ $? -eq 2 ]; then
+    # Could not open a connection to your authentication agent.
+
+    # Load stored agent connection info.
+    test -r ~/.ssh-agent && \
+        eval "$(<~/.ssh-agent)" >/dev/null
+
+    ssh-add -l &>/dev/null
+    if [ $? -eq 2 ]; then
+        # Start agent and store agent connection info.
+        (umask 066; ssh-agent > ~/.ssh-agent)
+        eval "$(<~/.ssh-agent)" >/dev/null
+    fi
+fi
+
+ssh-add -A
+
 
 
 export GOPATH=$HOME/go;
