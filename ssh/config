@@ -1,0 +1,12 @@
+
+Host pihole
+  Hostname 192.168.200.113
+  User pi
+  IdentityFile ~/.ssh/id_raspberry
+
+Host github.com
+  User git
+  Hostname github.com
+  IdentityFile ~/.ssh/id_github
+
+Host hagar

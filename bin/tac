@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+trap("PIPE", "EXIT")
+puts STDIN.read.split(/\r?\n/).reverse
