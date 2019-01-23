@@ -88,3 +88,6 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/anaconda3/bin:"$PATH"
 export PATH=$HOME/bin:$PATH
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
