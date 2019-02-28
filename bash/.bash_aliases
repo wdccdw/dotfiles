@@ -8,6 +8,7 @@ alias rasp19="ssh -i ~/.ssh/id_raspberry pi@192.168.200.119"
 alias rasp20="ssh -i ~/.ssh/id_raspberry pi@192.168.200.120"
 alias raspi-va="ssh -i ~/.ssh/id_raspberry pi@192.168.200.190"
 alias pihole="ssh -i ~/.ssh/id_raspberry pi@192.168.200.113"
+alias bedroompi="ssh -i ~/.ssh/id_raspberry pi@bedroompi.local"
 
 alias did="vim +'normal Go' +'r!date' ~/did.txt"
 alias devnote="code -n ~/dev/NOTES.md"
@@ -20,6 +21,15 @@ alias ladyslipper="sftp laufuc1@lizard.dreamhost.com"
 alias cd..='cd ..'
 alias dev='cd ~/dev'
 alias work='cd ~/dev/work'
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# IP addresses
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
