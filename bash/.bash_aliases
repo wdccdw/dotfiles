@@ -18,6 +18,9 @@ alias editalias="vim ~/dotfiles/bash/.bash_aliases; reload"
 
 alias ladyslipper="sftp laufuc1@lizard.dreamhost.com"
 
+# TODO make conditional
+alias temperature="/opt/vc/bin/vcgencmd measure_temp"
+
 alias cd..='cd ..'
 alias dev='cd ~/dev'
 alias work='cd ~/dev/work'
