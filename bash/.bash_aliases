@@ -2,14 +2,6 @@ alias beep='tput bel'
 alias bert='ssh wdc@bert'
 
 alias ando="ssh dconner@issara.pair.com"
-alias rasp16="ssh -i ~/.ssh/id_raspberry pi@192.168.200.116"
-alias rasp17="ssh -i ~/.ssh/id_raspberry pi@192.168.200.117"
-alias rasp18="ssh -i ~/.ssh/id_raspberry pi@192.168.200.118"
-alias rasp19="ssh -i ~/.ssh/id_raspberry pi@192.168.200.119"
-alias rasp20="ssh -i ~/.ssh/id_raspberry pi@192.168.200.120"
-alias raspi-va="ssh -i ~/.ssh/id_raspberry pi@192.168.200.190"
-alias pihole="ssh -i ~/.ssh/id_raspberry pi@192.168.200.113"
-alias bedroompi="ssh -i ~/.ssh/id_raspberry pi@bedroompi.local"
 
 alias did="vim +'normal Go' +'r!date' ~/did.txt"
 alias devnote="code -n ~/dev/NOTES.md"
@@ -58,7 +50,13 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
 
+codeprint() {
+    enscript -2rG --line-numbers -p -   --word-wrap --highlight --color=0 "$1" 2>/dev/null
+}
 
+to_pdf() {
+      pstopdf -i -o ~/out.pdf && open ~/out.pdf
+}
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
 
