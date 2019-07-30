@@ -1,4 +1,5 @@
 alias beep='tput bel'
+alias bert='ssh wdc@bert'
 
 alias ando="ssh dconner@issara.pair.com"
 alias rasp16="ssh -i ~/.ssh/id_raspberry pi@192.168.200.116"
