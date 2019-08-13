@@ -7,3 +7,4 @@ alias rasp20="ssh -i ~/.ssh/id_raspberry pi@192.168.200.120"
 alias raspi-va="ssh -i ~/.ssh/id_raspberry pi@192.168.200.190"
 alias pihole="ssh -i ~/.ssh/id_raspberry pi@192.168.200.113"
 alias bedroompi="ssh -i ~/.ssh/id_raspberry pi@bedroompi.local"
+alias bert='ssh wdc@bert'

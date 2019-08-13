@@ -1,6 +1,6 @@
 alias beep='tput bel'
-alias bert='ssh wdc@bert'
 
+alias bert='ssh wdc@bert'
 alias ando="ssh dconner@issara.pair.com"
 
 alias did="vim +'normal Go' +'r!date' ~/did.txt"
