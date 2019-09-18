@@ -7,3 +7,4 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # MacPorts Installer addition on 2009-04-26_at_18:28:45: adding an appropriate MANPATH variable for use with MacPorts.
 export MANPATH=/opt/local/share/man:$MANPATH
 
+

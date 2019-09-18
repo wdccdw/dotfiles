@@ -1,0 +1,3 @@
+if [ -r ~/.bash_aliases_work ]; then
+    source ~/.bash_aliases_work
+fi
