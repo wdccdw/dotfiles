@@ -5,6 +5,6 @@ alias rasp18="ssh -i ~/.ssh/id_raspberry pi@192.168.200.118"
 alias rasp19="ssh -i ~/.ssh/id_raspberry pi@192.168.200.119"
 alias rasp20="ssh -i ~/.ssh/id_raspberry pi@192.168.200.120"
 alias raspi-va="ssh -i ~/.ssh/id_raspberry pi@192.168.200.190"
-alias pihole="ssh -i ~/.ssh/id_raspberry pi@192.168.200.113"
+alias pihole="/usr/bin/ssh -i ~/.ssh/id_raspberry pi@192.168.2.176"
 alias bedroompi="ssh -i ~/.ssh/id_raspberry pi@bedroompi.local"
 alias bert='ssh wdc@bert'
